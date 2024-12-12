@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--css-->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="brand">
+          <img src="./imgs/logo.png" alt="logo" />
+          <div class="appName d-inline-block">
+            <a class="navbar-brand text-white" href="#">Weather</a>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto p-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="backgroundImg">
+      <div class="container text-center py-5">
+        <div class="search-bar my-4 position-relative">
+          <input
+            type="text"
+            id="cityInput"
+            class="form-control"
+            placeholder="Find your location..."
+            oninput="showSuggestions()"
+          />
+          <div id="suggestions" class="autocomplete-suggestions d-none"></div>
+          <button class="btn btn-primary mt-3" onclick="fetchWeather()">
+            Find
+          </button>
+        </div>
+
+        <div id="weatherDisplay" class="d-none">
+          <h3 id="cityName"></h3>
+          <div class="row justify-content-center mt-4" id="forecast"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="email mx-4 d-flex">
+            <input
+              type="email"
+              class="form-control w-50 rounded-4"
+              placeholder="Enter your email to subscribe..."
+            />
+            <button class="sub btn btn-primary rounded-3 mt-3 mx-2 text-center">
+              Subscribe
+            </button>
+            <div class="icons mx-auto mt-4 p-2 px-4">
+              <i class="fa-brands fa-facebook mx-2"></i>
+              <i class="fa-brands fa-twitter mx-2"></i>
+              <i class="fa-brands fa-google-plus-g mx-2"></i>
+              <i class="fa-brands fa-pinterest mx-2"></i>
+            </div>
+          </div>
+
+          <p class="mx-4 my-3">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved .
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--JS-->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

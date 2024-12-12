@@ -1,0 +1,81 @@
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.backgroundImg {
+  background-image: url("../imgs/rainbow-4047523_1920.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  height: 580px;
+}
+.navbar {
+  background-color: rgb(36, 38, 48);
+}
+
+.navbar li a {
+  color: white;
+  margin: 0 10px;
+  transition: all 0.1s;
+}
+
+.navbar li a:hover {
+  color: #009ad8;
+  border: solid #009ad8 3px;
+  border-radius: 20px;
+  padding: 3px 7px;
+}
+
+.search-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.forecast-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.autocomplete-suggestions {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 100;
+  width: 80%;
+}
+.autocomplete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+.autocomplete-suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: rgb(36, 38, 48);
+}
+
+.icons i{
+  border-radius: 50%;
+  background-color:rgb(30,32,43) ;
+  padding: 12px;
+  transition: all 0.3s;
+}
+
+.icons i:hover{
+  cursor: pointer;
+  background-color:rgb(0,154,216) ;
+
+}
+
+
+
